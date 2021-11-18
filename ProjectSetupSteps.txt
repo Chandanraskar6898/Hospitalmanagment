@@ -1,16 +1,15 @@
-C803-D6C1
 project setup steps
 1 take code of master branch from  below repository 
 	https://github.com/Chandanraskar6898/Hospitalmanagment/tree/master
-2 open Dataserver floder
-3 Execute below SQL script 
+2 open Dataserver folder
+3 Execute below SQL script on SQL Management Studio(change csv path to local folder +"Hospitalmanagment\Dataserver\Data" in SQL script)
 	1 create database.sql
 	2 clinic table.sql
 	3 docter info.sql
 	4 patientinfo.sql
 	5 transactioninfo.sql
 	6 appointmentinfo.sql
-4 open store procedure folder
+4 open Stored Procedure folder
 5 Execute below sql script
 	1 GetAppointmentsDetail.sql
 	2 Getpatientinfo.sql
@@ -19,4 +18,4 @@ project setup steps
 	5 DeleteappointmentByAmount.sql
 6 Open Hospitalmanagment\source\Hospitalmanagment folder
 7 Open Hospitalmanagment.sln in visul studio
-8 Run application
+8 Run application in chrome
