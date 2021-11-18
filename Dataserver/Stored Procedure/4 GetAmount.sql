@@ -2,15 +2,15 @@ use [Hospitalmanagment]
 go
 IF EXISTS ( SELECT * 
             FROM   sysobjects 
-            WHERE  id = object_id(N'[dbo].[[GetAmount]]') 
+            WHERE  id = object_id(N'[dbo].[GetCollectionAmount]') 
                    and OBJECTPROPERTY(id, N'IsProcedure') = 1 )
 BEGIN
-    DROP PROCEDURE [dbo].[GetAmount]
+    DROP PROCEDURE [dbo].[GetCollectionAmount]
 end
 use [Hospitalmanagment]
 go
 
-CREATE PROCEDURE GetAmount
+CREATE PROCEDURE GetCollectionAmount
 
 AS
 BEGIN

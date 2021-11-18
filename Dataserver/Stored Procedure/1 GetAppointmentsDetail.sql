@@ -19,7 +19,7 @@ SET NOCOUNT ON
  select count(*) as 'appointment count',clinic.clinicname,Clinic.clinicid , year(apptdate) as 'year', month(apptdate) 'month' from appointmentinfo 
  inner join Clinic on clinic.clinicid=appointmentinfo.clinicid
  --where clinic.clinicid=@clinicid
- group by clinic.clinicid,clinic.clinicname,appointmentinfo.apptdate
+ group by clinic.clinicid,clinic.clinicname,year(apptdate),month(apptdate) order by clinic.clinicid 
  
 
 
